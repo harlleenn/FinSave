@@ -14,9 +14,6 @@ export default function Dashboard() {
     <Link href="/balance">
        <CardLayout Header="BALANCE" Body="Click to view BALANCE details" />
     </Link>
-
-   
- 
     </div>
   );
 }
