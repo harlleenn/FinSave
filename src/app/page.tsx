@@ -1,18 +1,22 @@
-import Income from "./components/Income/page";
-import Expense from './components/Expense/page'
+
+import Link from "next/link";
+import CardLayout from "./components/CardLayout/CardLayout";
 export default function Dashboard() {
   return (
-    <div>
-    this is the main page
-    <div>
-      <Income/>
-    </div>
-    <div>
-      <Expense/>
-    </div>
-    <div>
-      BALANCE
-    </div>
+    <div className=" justify-center flex">
+    <Link href="/income">
+    <CardLayout Header="INCOME" Body="Click to view income details" />
+    </Link>
+
+    <Link href="/expense"> 
+    <CardLayout Header="EXPENSES" Body="Click to view EXPENSES details" />
+    </Link>
+    <Link href="/balance">
+       <CardLayout Header="BALANCE" Body="Click to view BALANCE details" />
+    </Link>
+
+   
+ 
     </div>
   );
 }

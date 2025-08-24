@@ -1,24 +1,22 @@
 "use client"
-
-import {Card, CardHeader, CardBody, Image} from "@heroui/react";
+import {Card, CardHeader, CardBody} from "@heroui/react";
 
 export default function CardLayout({Header, Body}) {
   return (
-    <Card className="py-4">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+    <Card className="max-w-sm bg-white border border-gray-200 rounded-lg 
+    shadow-sm dark:bg-amber-600 hover:bg-amber-900 p-20 justify-center flex">
+      <CardHeader className="">
         <p className="text-tiny uppercase font-bold">{Header}</p>
-        <small className="text-default-500">12 Tracks</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
       </CardHeader>
-      <CardBody className="overflow-visible py-2">
-        <Image
-          alt="Card background"
-          className="object-cover rounded-xl"
-          src="https://heroui.com/images/hero-card-complete.jpeg"
-          width={270}
-        />
+      <CardBody className="">
+                    {Body}
       </CardBody>
     </Card>
   );
 }
 
+
+
+
+            
+       
