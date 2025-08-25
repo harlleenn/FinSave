@@ -1,7 +1,6 @@
 "use client"
 
-import MyBarChart from "../components/MyBarChart";
-
+import MyBarChart from "../components/barChart/MyBarChart";
 export default function Income () {
  
     return (

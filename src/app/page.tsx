@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import CardLayout from "./components/CardLayout/CardLayout";
+import CardLayout from "./components/cardLayout/CardLayout";
 export default function Dashboard() {
   return (
     <div className=" justify-center flex">

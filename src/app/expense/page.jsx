@@ -1,9 +1,11 @@
+"use client"
 
+import MyBarChart from '../components/barChart/MyBarChart'
 export default function Expense () {
  
     return (
         <>
-      <p>HELLOOOOOOO</p>
+      <MyBarChart/>
         </>
     )
 }
